@@ -32,11 +32,11 @@ graph TD
     B --> D[Memory Extractor]
     
     subgraph "Background Process"
-    D -- "Analysis & Extraction" --> E[(Structured Memory Store)]
+    D -- "Analysis & Extraction" --> E[("Structured Memory Store")]
     end
     
     E -- "Context Injection" --> C
-    C -- "System Prompt + Memory" --> F[LLM (GPT-4)]
+    C -- "System Prompt + Memory" --> F["LLM (GPT-4)"]
     F --> G[Response to User]
 ```
 ### Key Features
